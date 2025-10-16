@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>College Logo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        img.logo {
-            width: 200px;
-            height: auto;
-        }
-        h1 {
-            margin-top: 20px;
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Veltech College Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .login-container {
+      background-color: #fff;
+      padding: 30px;
+      margin: auto;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .login-container img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .login-container input[type="submit"] {
+      background-color: #004080;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-container input[type="submit"]:hover {
+      background-color: #003366;
+    }
+  </style>
 </head>
 <body>
-    <img src="https://via.placeholder.com/200x100?text=College+Logo" alt="College Logo" />
-    <h1>Welcome to [Your College Name]</h1>
+
+  <div class="login-container">
+    <img src="veltech-logo.png" alt="Veltech Logo">
+    <h2>College Login</h2>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
 </body>
 </html>
